@@ -29,7 +29,6 @@ class MyWidget(QMainWindow):
         self.do_paint = True
         self.update()
     def create(self):
-        print('a')
         self.x = random.randint(0, 600)
         self.y = random.randint(0, 600)
         self.qp.setBrush(QColor(255, 255, 0))
