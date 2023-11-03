@@ -34,7 +34,6 @@ class MyWidget(QMainWindow):
         self.qp.setBrush(QColor(255, 255, 0))
         self.d = random.randint(50, 300)
         self.qp.drawEllipse(self.x, self.y, self.d, self.d)
-        print('go')
 
 
 if __name__ == '__main__':
