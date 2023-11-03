@@ -31,7 +31,7 @@ class MyWidget(QMainWindow):
     def create(self):
         self.x = random.randint(0, 600)
         self.y = random.randint(0, 600)
-        self.qp.setBrush(QColor(255, 255, 0))
+        self.qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0,255)))
         self.d = random.randint(50, 300)
         self.qp.drawEllipse(self.x, self.y, self.d, self.d)
 
