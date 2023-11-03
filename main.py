@@ -1,5 +1,4 @@
 import sys
-from PyQt5 import uic, Qt
 from PyQt5.QtGui import QPainter, QColor
 from PyQt5.QtWidgets import QWidget, QApplication, QPushButton, QMainWindow
 import random
@@ -8,8 +7,8 @@ import random
 class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('UI.ui', self)
         self.setFixedSize(600, 600)
+        self.ellipse_btn = QPushButton('click', self)
         self.qp = QPainter()
         self.qp.begin(self)
         self.do_paint = False
